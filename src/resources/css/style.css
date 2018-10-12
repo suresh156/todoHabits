@@ -1,0 +1,93 @@
+.bg-primary-color{
+    background-image: url('../imgs/bg.png') ;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: #00000040;
+}
+.bg-secondary-color{
+    background: #5456ff !important;
+}
+.bg-light-gray{
+    background: #eaeefa;
+}
+.color-white{
+    color: #fff !important;
+}
+.white-bg{
+    background:#fff;
+    position: absolute;
+    top: 20px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  overflow: scroll;
+  margin: 0;
+  padding: 0;
+  
+  border: 2px solid #ccc;
+  
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  
+  // Again, this is where the magic happens
+  -webkit-overflow-scrolling: touch;
+
+}
+.white-bg a{
+    text-decoration: none !important;
+}
+.hv-100vh{
+    height: 100vh;
+}
+.white-bg form{
+    padding: 1rem;
+}
+.white-bg input{
+    border: none;
+    box-shadow: 1px 1px 2px 1px #ddd;
+    border-radius: 0px;
+    height: 40px;
+}
+
+
+ul {
+  /*position: absolute;*/
+  top: 20px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  
+  border: 2px solid #ccc;
+  
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  
+  // Again, this is where the magic happens
+  -webkit-overflow-scrolling: touch;
+}
+
+li {
+  padding: 10px 20px;
+  
+  border-bottom: 1px solid #ccc;
+  
+  &:last-child {
+    border-bottom: none;
+  }
+  
+  &:nth-child(even) {
+    background: #f8f8f8;
+  }
+}
+
+.green {
+    color: green;
+}
+
+.grey {
+    color: gray;
+}

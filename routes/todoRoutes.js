@@ -11,6 +11,6 @@ todoRouter.post('/', (req, res)=> {
 
 //Router function to get All Habit
 todoRouter.get('/', function (req, res) {
-    todoController.gettodo(req, res);
+    todoController.gethabit(req, res);
 });
 module.exports = todoRouter;

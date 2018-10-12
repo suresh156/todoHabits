@@ -4,7 +4,11 @@
   "description": "Todo Habits Manager",
   "main": "index.js",
   "scripts": {
-    "start": "mode=development nodemon app.js",
+    "start:dev": "mode=development nodemon app.js",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
   "author": "Suresh",
   "license": "ISC",
@@ -16,6 +20,14 @@
     "lodash": "^4.17.10",
     "mongoose": "^5.2.6",
     "morgan": "^1.9.0",
-    "nodemon": "^1.18.3"
+    "nodemon": "^1.18.3",
+    "bootstrap": "^4.1.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-js-pagination": "^3.0.2",
+    "react-paginate": "^5.2.4",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.5",
+    "reactstrap": "^6.4.0"
   }
 }

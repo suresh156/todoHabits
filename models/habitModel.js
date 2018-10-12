@@ -6,12 +6,12 @@ const habitSchema = new mongoose.Schema({
         required: true
     },
     enable: {
-        type: boolean ,
+        type: Boolean ,
         required: true,
 	default : true
     },
     softdelete: {
-        type: boolean,
+        type: Boolean,
         required: true,
 	default : false
     },
