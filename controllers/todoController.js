@@ -7,14 +7,17 @@ class todo {
     // Function to get all expenses
     async gethabit(req, res) {
         try {
-            let habitData = await habitModel.find({softdelete : false})
-            .select('title enable created_at').sort({ 'created_at': -1 }).lean();
+            let habitData = await habitModel.
+            find(
+                    {softdelete : false}
+                )
+            .select('title enable softdelete created_at').sort({ 'created_at': -1 }).lean();
             let message = 'All Habit listed';
            
             if (_.size(habitData) > 0) {
                 __.success(res, habitData, message);
             } else {
-                __.notFound(res, 'No habit\'s available');
+                __.success(res, habitData, 'No habit\'s available');
             }
         } catch (error) {
             __.errorInternal(res, error);
